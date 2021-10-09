@@ -33,8 +33,8 @@ const keyboard = {
     this.elements.main.appendChild(this.elements.keysContainer);
     document.body.appendChild(this.elements.main);
 
-    // Automatically use keyboard for elements with .use-keyboard-input
-    document.querySelectorAll('.use-keyboard-input').forEach((element) => {
+    // Automatically use keyboard for elements with .trigger-keyboard
+    document.querySelectorAll('.trigger-keyboard').forEach((element) => {
       element.addEventListener('focus', () => {
         this.open(element.value, (currentValue) => {
           element.value = currentValue;
