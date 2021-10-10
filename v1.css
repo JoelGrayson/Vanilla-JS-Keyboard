@@ -1,13 +1,25 @@
 .keyboard {
   position: fixed;
-  left: 0;
   bottom: 0;
-  width: 100%;
+  left: 10%;
+  width: 80%;
+  min-width: 450px;
   padding: 5px 0;
   background: rgb(68, 4, 121);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   user-select: none;
   transition: bottom 0.4s;
+  max-width: 50rem;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .keyboard {
+      border-radius: 0;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+  }
 }
 .keyboard-hidden {
   bottom: -100%;
@@ -48,7 +60,7 @@
   max-width: 500px;
 }
 .keyboard-key--activatable::after {
-  content: '';
+  content: "";
   top: 10px;
   right: 10px;
   position: absolute;

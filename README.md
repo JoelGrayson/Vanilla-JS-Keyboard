@@ -19,6 +19,9 @@
 ```
 Check out a demo at https://w.joelgrayson.com/keyboard/demo-v1.html.
 
+### Documentation
+* Use `keyboard.enabled=false` to disable and `keyboard.enabled=true` to re-enable the keyboard.
+
 
 ## Attribution
 Forked from https://www.cssscript.com/virtual-keyboard-desktop/ with alterations by me.
